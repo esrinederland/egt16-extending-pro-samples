@@ -1,0 +1,12 @@
+D:\projects\GT2016\Demo1\Demo1\bin\Debug\Demo1.dll
+D:\projects\GT2016\Demo1\Demo1\bin\Debug\Demo1.pdb
+D:\projects\GT2016\Demo1\Demo1\obj\Debug\Demo1.csprojResolveAssemblyReference.cache
+D:\projects\GT2016\Demo1\Demo1\obj\Debug\Demo1.dll
+D:\projects\GT2016\Demo1\Demo1\obj\Debug\Demo1.pdb
+D:\projects\GT2016\Demo1\Demo1\bin\Debug\Demo1.esriAddInX
+D:\GisTech 2016\Demo1\Demo1\bin\Debug\Demo1.dll
+D:\GisTech 2016\Demo1\Demo1\bin\Debug\Demo1.pdb
+D:\GisTech 2016\Demo1\Demo1\obj\Debug\Demo1.dll
+D:\GisTech 2016\Demo1\Demo1\obj\Debug\Demo1.pdb
+D:\GisTech 2016\Demo1\Demo1\obj\Debug\Demo1.csprojResolveAssemblyReference.cache
+D:\GisTech 2016\Demo1\Demo1\bin\Debug\Demo1.esriAddInX
