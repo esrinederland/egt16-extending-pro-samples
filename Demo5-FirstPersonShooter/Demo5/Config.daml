@@ -1,0 +1,37 @@
+﻿<ArcGIS defaultAssembly="Demo5.dll" defaultNamespace="Demo5" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{36dcce12-3385-401b-ad4e-bd2fb507aa1c}" version="1.0" desktopVersion="1.2.5023">
+    <Name>Demo5</Name>
+    <Description>Demo5 description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>P. Mallo en M. van Hulzen</Author>
+    <Company>Esri Nederland BV</Company>
+    <Date>06-Apr-2016 15:09:48, 2016</Date>
+    <Subject>Demo 5 GIS Tech 2016</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="Demo5_Module" className="Module1" autoLoad="true" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="Demo5_Tab1" caption="Demo-GT16-5">
+          <group refID="Demo5_Group1" />
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="Demo5_Group1" caption="Group 1" appearsOnAddInTab="false">
+          <!-- host controls within groups -->          
+          <tool refID="Demo5_FPS" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <tool id="Demo5_FPS" caption="FPS " className="FPS" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">FPS<disabledText /></tooltip>
+        </tool>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
