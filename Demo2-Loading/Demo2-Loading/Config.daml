@@ -1,0 +1,43 @@
+﻿<ArcGIS defaultAssembly="Demo2-Loading.dll" defaultNamespace="Demo2_Loading" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{35505019-c422-4a64-b380-be28668ce0db}" version="1.0" desktopVersion="1.2.5023">
+    <Name>Demo2_Loading</Name>
+    <Description>Demo2_Loading description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>P. Mallo en M. van Hulzen</Author>
+    <Company>Esri Nederland BV</Company>
+    <Date>11-Apr-2016 09:57:08, 2016</Date>
+    <Subject>Demo 4 GIS Tech 2016</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="Demo2_Loading_Module" className="Module1" autoLoad="true" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="Demo2_Loading_Tab1" caption="Demo-GT16-2a">
+          <group refID="Demo2_Loading_Group1"/>
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="Demo2_Loading_Group1" caption="Group 1" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="Demo2_Loading_Button1" size="large" />
+          <button refID="Demo2_Loading_Button2" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="Demo2_Loading_Button1" caption="Button 1" className="Button1" 
+                loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="Demo2_Loading_Button2" caption="Button 2" className="Button2" 
+                loadOnClick="false" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
