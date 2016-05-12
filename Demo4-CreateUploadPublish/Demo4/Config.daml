@@ -1,0 +1,37 @@
+﻿<ArcGIS defaultAssembly="Demo4.dll" defaultNamespace="Demo4" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{e267e6a3-d6d4-430a-8962-f29221b78219}" version="1.0" desktopVersion="1.2.5023">
+    <Name>Demo4</Name>
+    <Description>Demo4 description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>P. Mallo en M. van Hulzen</Author>
+    <Company>Esri Nederland BV</Company>
+    <Date>06-Apr-2016 06:13:42, 2016</Date>
+    <Subject>Demo 4 GIS Tech 2016</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="Demo4_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="Demo4_Tab1" caption="Demo-GT16-4">
+          <group refID="Demo4_Group1" />
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="Demo4_Group1" caption="Group 1" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="Demo4_CreateAndPublishVT" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="Demo4_CreateAndPublishVT" caption="CreateAndPublishVT " className="CreateAndPublishVT" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Create and Publish<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
