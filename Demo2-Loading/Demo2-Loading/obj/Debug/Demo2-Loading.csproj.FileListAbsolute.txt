@@ -1,5 +1,0 @@
-D:\GisTech 2016\Demo2-Loading\Demo2-Loading\bin\Debug\Demo2-Loading.dll
-D:\GisTech 2016\Demo2-Loading\Demo2-Loading\bin\Debug\Demo2-Loading.pdb
-D:\GisTech 2016\Demo2-Loading\Demo2-Loading\obj\Debug\Demo2-Loading.dll
-D:\GisTech 2016\Demo2-Loading\Demo2-Loading\obj\Debug\Demo2-Loading.pdb
-D:\GisTech 2016\Demo2-Loading\Demo2-Loading\bin\Debug\Demo2-Loading.esriAddInX
