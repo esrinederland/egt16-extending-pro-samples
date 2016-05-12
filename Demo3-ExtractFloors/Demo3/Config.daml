@@ -1,0 +1,47 @@
+﻿<ArcGIS defaultAssembly="Demo3.dll" defaultNamespace="Demo3" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{a73804a5-a24e-43af-a12c-8feaf0fcb9fd}" version="1.0" desktopVersion="1.2.5023">
+    <Name>Demo3</Name>
+    <Description>Demo 3</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>P. Mallo en M. van Hulzen</Author>
+    <Company>Esri Nederland BV</Company>
+    <Date>04-Apr-2016 12:11:23, 2016</Date>
+    <Subject>Demo 3 GIS Tech 2016</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="Demo3_Module" className="Module1" autoLoad="true" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="Demo3_Tab1" caption="Demo-GT16-3">
+          <group refID="Demo3_Group1" />
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid an empty group-->
+        <group id="Demo3_Group1" caption="Group 1" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="Demo3_GE_FloorExtracter" size="large" />
+          <button refID="Demo3_EO_FloorExtracter" size="large" />
+          <tool refID="Demo3_MapTool_Extracter" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="Demo3_GE_FloorExtracter" caption="G.E. FloorExtract" 
+                className="GE_FloorExtracter" loadOnClick="true" smallImage="Images\GenericButtonRed16.png" largeImage="Images\GenericButtonRed32.png">
+          <tooltip heading="Tooltip Heading">G.E. FloorExtract<disabledText /></tooltip>
+        </button>
+        <button id="Demo3_EO_FloorExtracter" caption="E.O. FloorExtract" 
+                className="EO_FloorExtracter" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">E.O. FloorExtract<disabledText /></tooltip>
+        </button>
+        <tool id="Demo3_MapTool_Extracter" caption="MapTool _Extracter" 
+              className="MapTool_Extracter" loadOnClick="true" smallImage="Images\GenericButtonRed16.png" largeImage="Images\GenericButtonRed32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </tool>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
