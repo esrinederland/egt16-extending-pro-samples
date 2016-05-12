@@ -1,0 +1,36 @@
+﻿<ArcGIS defaultAssembly="Demo1.dll" defaultNamespace="Demo1" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{beec4ac9-bac5-442b-b2e5-9e3228316fdd}" version="1.0" desktopVersion="1.2.5023">
+    <Name>Demo1</Name>
+    <Description>Demo 1</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>P. Mallo en M. van Hulzen</Author>
+    <Company>Esri Nederland BV</Company>
+    <Date>04-Apr-2016 09:21:10, 2016</Date>
+    <Subject>Demo 1 GIS Tech 2016</Subject>
+    <!-- Note subject can be one or more of these topics: Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="Demo1_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="Demo1_Tab1" caption="Demo-GT16-1">
+          <group refID="Demo1_Group1"/>
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="Demo1_Group1" caption="Group 1" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="Demo1_btnNoord" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="Demo1_btnNoord" caption="Noord " className="btnNoord" loadOnClick="true" smallImage="Images\GenericButtonBlue16.png" largeImage="Images\GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">knopje noord<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
